@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outside the Lines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>outside the lines</h1>
+        <p class="subtitle">an ai-powered offline mission generator</p>
+        
+        <div class="card" id="setup-card">
+            <label>how much time do you have?</label>
+            <div class="button-group" id="time-group">
+                <button data-time="10 mins">10 mins</button>
+                <button data-time="20 mins">20 mins</button>
+                <button data-time="45 mins">45 mins</button>
+            </div>
+
+            <label>what's your vibe?</label>
+            <div class="button-group" id="vibe-group">
+                <button data-vibe="calm">calm</button>
+                <button data-vibe="curious">curious</button>
+                <button data-vibe="creative">creative</button>
+            </div>
+
+            <button id="generate-btn">give me a mission</button>
+        </div>
+
+        <div class="card hidden" id="mission-card">
+            <h2>your mission</h2>
+            <p id="mission-text">loading...</p>
+            <div class="warning-box">
+                <strong>put your phone away.</strong>
+            </div>
+            <button id="reset-btn">back</button>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
